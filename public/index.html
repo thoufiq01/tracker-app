@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tracker</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="app">
+  <header>
+    <div class="header-left">
+      <h1>Tracker</h1>
+      <span id="today-date"></span>
+    </div>
+    <div class="header-right">
+      <input type="date" id="date-picker" title="Log for a different day" />
+      <button class="btn-icon" id="btn-goals"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/></svg> Goals</button>
+      <button class="btn-icon tab-btn active" data-tab="log">Log</button>
+      <button class="btn-icon tab-btn" data-tab="analytics">Analytics</button>
+      <button class="btn-icon tab-btn" data-tab="history">History</button>
+      <button class="btn-icon tab-btn" data-tab="streak">Calendar</button>
+    </div>
+  </header>
+
+  <!-- LOG -->
+  <div id="tab-log" class="tab-content active">
+    <div class="cards-grid" id="cards-grid"></div>
+    <div class="week-section">
+      <div class="section-label">This week</div>
+      <div class="week-row" id="week-row"></div>
+    </div>
+  </div>
+
+  <!-- ANALYTICS -->
+  <div id="tab-analytics" class="tab-content">
+    <div class="analytics-header">
+      <div class="section-label" style="margin:0">Advanced Analytics</div>
+      <div class="period-toggle">
+        <button class="period-btn active" data-period="alltime">All time</button>
+        <button class="period-btn" data-period="month">This month</button>
+        <button class="period-btn" data-period="week">7 days</button>
+      </div>
+    </div>
+    <div class="stats-row" id="stats-row"></div>
+    <div class="charts-grid" id="charts-grid"></div>
+  </div>
+
+  <!-- HISTORY -->
+  <div id="tab-history" class="tab-content">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px">
+      <div class="section-label" style="margin:0">All entries</div>
+      <select id="history-filter" class="filter-select">
+        <option value="all">All habits</option>
+        <option value="gym">Gym</option>
+        <option value="dsa">DSA</option>
+        <option value="webdev">Web Dev</option>
+        <option value="content">Content</option>
+        <option value="food">Food</option>
+        <option value="study">Study Time</option>
+        <option value="study_sessions">Study Sessions</option>
+      </select>
+    </div>
+    <div id="history-list"></div>
+  </div>
+
+  <!-- STREAK CALENDAR -->
+  <div id="tab-streak" class="tab-content">
+    <div id="streak-summary" class="streak-summary"></div><div class="calendar-subtitle">CodeChef/GitHub style contribution calendar</div>
+    <div class="cal-controls">
+      <div class="cal-nav">
+        <button class="btn-icon" id="cal-prev">&#8592;</button>
+        <span id="cal-month-label"></span>
+        <button class="btn-icon" id="cal-next">&#8594;</button>
+      </div>
+      <div class="cal-legend">
+        <div class="cal-legend-item"><div class="cal-legend-dot" style="background:#bbf7d0;border:1px solid #ccc"></div>1 task</div>
+        <div class="cal-legend-item"><div class="cal-legend-dot" style="background:#4ade80"></div>Half</div>
+        <div class="cal-legend-item"><div class="cal-legend-dot" style="background:#16a34a"></div>Most</div>
+        <div class="cal-legend-item"><div class="cal-legend-dot" style="background:#14532d"></div>All ✓</div>
+      </div>
+    </div>
+    <div class="cal-grid-wrap">
+      <div class="cal-day-headers">
+        <span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span>
+      </div>
+      <div class="cal-grid" id="cal-grid"></div>
+    </div>
+  </div>
+</div>
+
+<!-- GOALS MODAL -->
+<div id="goals-modal" class="modal-backdrop" style="display:none">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="modal-title">Edit goals</span>
+      <button class="btn-icon" id="close-goals">✕</button>
+    </div>
+    <div id="goals-form"></div>
+    <button class="btn-primary" id="save-goals">Save goals</button>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

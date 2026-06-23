@@ -1,0 +1,49 @@
+{
+  "gym": {
+    "label": "Gym",
+    "unit": "min",
+    "goal": 60,
+    "color": "#1D9E75",
+    "walking": {
+      "goal": 30
+    }
+  },
+  "dsa": {
+    "label": "DSA",
+    "unit": "problems",
+    "goal": 1,
+    "color": "#378ADD"
+  },
+  "webdev": {
+    "label": "Web Dev",
+    "unit": "modules",
+    "goal": 1,
+    "color": "#8B5CF6"
+  },
+  "content": {
+    "label": "Content Creation",
+    "unit": "reels",
+    "goal": 0,
+    "color": "#D4537E"
+  },
+  "food": {
+    "label": "Food",
+    "unit": "kcal",
+    "goal": 2000,
+    "color": "#EF9F27",
+    "macros": {
+      "protein": 150,
+      "carbs": 250,
+      "fats": 70
+    }
+  },
+  "study": {
+    "label": "Study Time",
+    "unit": "min",
+    "goal": 240,
+    "color": "#F97316",
+    "sessions": {
+      "goal": 2
+    }
+  }
+}
