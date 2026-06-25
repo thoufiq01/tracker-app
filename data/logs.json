@@ -826,5 +826,199 @@
         }
       ]
     }
+  },
+  "2026-06-21": {
+    "gym_walk": {
+      "total": 160,
+      "entries": [
+        {
+          "value": 160,
+          "ts": 1782261516024
+        }
+      ]
+    },
+    "study": {
+      "total": 240,
+      "entries": [
+        {
+          "value": 240,
+          "ts": 1782261522755
+        }
+      ]
+    },
+    "study_sessions": {
+      "total": 2,
+      "entries": [
+        {
+          "value": 2,
+          "ts": 1782261525430
+        }
+      ]
+    },
+    "food": {
+      "total": 1500,
+      "entries": [
+        {
+          "value": 1500,
+          "ts": 1782261534691,
+          "meta": {
+            "meal": "Meal",
+            "protein": 80,
+            "carbs": 120,
+            "fats": 40
+          }
+        }
+      ]
+    }
+  },
+  "2026-06-22": {
+    "food": {
+      "total": 1800,
+      "entries": [
+        {
+          "value": 1800,
+          "ts": 1782261703735,
+          "meta": {
+            "meal": "Meal",
+            "protein": 90,
+            "carbs": 280,
+            "fats": 50
+          }
+        }
+      ]
+    },
+    "study": {
+      "total": 360,
+      "entries": [
+        {
+          "value": 360,
+          "ts": 1782261716836
+        }
+      ]
+    },
+    "gym": {
+      "total": 60,
+      "entries": [
+        {
+          "value": 60,
+          "ts": 1782261738620
+        }
+      ]
+    },
+    "gym_walk": {
+      "total": 90,
+      "entries": [
+        {
+          "value": 90,
+          "ts": 1782261752530
+        }
+      ]
+    }
+  },
+  "2026-06-23": {
+    "food": {
+      "total": 2000,
+      "entries": [
+        {
+          "value": 2000,
+          "ts": 1782261834333,
+          "meta": {
+            "meal": "Meal",
+            "protein": 140,
+            "carbs": 280,
+            "fats": 40
+          }
+        }
+      ]
+    },
+    "study": {
+      "total": 360,
+      "entries": [
+        {
+          "value": 360,
+          "ts": 1782261838382
+        }
+      ]
+    },
+    "gym": {
+      "total": 60,
+      "entries": [
+        {
+          "value": 60,
+          "ts": 1782261841263
+        }
+      ]
+    },
+    "gym_walk": {
+      "total": 80,
+      "entries": [
+        {
+          "value": 80,
+          "ts": 1782261847041
+        }
+      ]
+    }
+  },
+  "2026-06-24": {
+    "food": {
+      "total": 1800,
+      "entries": [
+        {
+          "value": 1800,
+          "ts": 1782409937653,
+          "meta": {
+            "meal": "1800",
+            "protein": 90,
+            "carbs": 200,
+            "fats": 40
+          }
+        }
+      ]
+    },
+    "study": {
+      "total": 360,
+      "entries": [
+        {
+          "value": 360,
+          "ts": 1782409944409
+        }
+      ]
+    },
+    "webdev": {
+      "total": 1,
+      "entries": [
+        {
+          "value": 1,
+          "ts": 1782409947123
+        }
+      ]
+    },
+    "dsa": {
+      "total": 4,
+      "entries": [
+        {
+          "value": 4,
+          "ts": 1782409948601
+        }
+      ]
+    },
+    "gym": {
+      "total": 60,
+      "entries": [
+        {
+          "value": 60,
+          "ts": 1782409951133
+        }
+      ]
+    },
+    "gym_walk": {
+      "total": 160,
+      "entries": [
+        {
+          "value": 160,
+          "ts": 1782409977914
+        }
+      ]
+    }
   }
 }
